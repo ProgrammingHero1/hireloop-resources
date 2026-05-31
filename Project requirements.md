@@ -326,7 +326,7 @@ On submit: save job with status active, link to Recruiter's company, and make it
 
 ---
 
-## **Parcel Status Flow (Application Status Flow)**
+## **Application Status Flow**
 
 Job Posted → Seeker Applies → Under Review → Shortlisted → Offered / Rejected
 
