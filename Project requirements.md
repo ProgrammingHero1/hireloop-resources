@@ -138,7 +138,7 @@ The system will have a **Responsive Dashboard** consistent across all roles.
 
 ---
 
-### **Browse & Apply (/dashboard/jobs)**
+### **Browse & Apply (/dashboard/seeker/jobs)**
 
 * Full job search experience within the dashboard.  
 * Filters for job type, location, salary, and category.  
@@ -147,7 +147,7 @@ The system will have a **Responsive Dashboard** consistent across all roles.
 
 ---
 
-### **Saved Jobs (/dashboard/saved)**
+### **Saved Jobs (/dashboard/seeker/saved)**
 
 * Displays all jobs the Seeker has bookmarked.  
 * Table/card format with: job title, company, location, salary, date saved.  
@@ -155,7 +155,7 @@ The system will have a **Responsive Dashboard** consistent across all roles.
 
 ---
 
-### **My Applications (/dashboard/applications)**
+### **My Applications (/dashboard/seeker/applications)**
 
 * Table of all submitted applications.  
 * Columns: Job Title, Company, Date Applied, Status (Applied / Under Review / Shortlisted / Rejected / Offered).  
@@ -164,7 +164,7 @@ The system will have a **Responsive Dashboard** consistent across all roles.
 
 ---
 
-### **Subscription & Billing (/dashboard/billing)**
+### **Subscription & Billing (/dashboard/seeker/billing)**
 
 * Shows the Seeker's current plan (Free / Pro / Enterprise).  
 * Upgrade/Downgrade buttons linking to the Pricing page.  
@@ -174,7 +174,7 @@ The system will have a **Responsive Dashboard** consistent across all roles.
 
 ---
 
-### **Seeker Settings (/dashboard/settings)**
+### **Seeker Settings (/dashboard/seeker/settings)**
 
 * Update profile info: name, email, avatar/photo URL, password.  
 * Upload or update resume (PDF).  
@@ -280,7 +280,7 @@ On submit: save job with status active, link to Recruiter's company, and make it
 
 ---
 
-### **Manage Users (/admin/users)**
+### **Manage Users (/dashboard/admin/users)**
 
 * Search bar filtering by email address.  
 * Filter dropdown by role (Seeker / Recruiter).  
@@ -292,7 +292,7 @@ On submit: save job with status active, link to Recruiter's company, and make it
 
 ---
 
-### **Manage Companies (/admin/companies)**
+### **Manage Companies (/dashboard/admin/companies)**
 
 * Table of all company registrations.  
 * Columns: Company Name, Recruiter Email, Industry, Status (Pending / Approved / Rejected), Date Submitted.  
@@ -302,7 +302,7 @@ On submit: save job with status active, link to Recruiter's company, and make it
 
 ---
 
-### **Manage Jobs (/admin/jobs)**
+### **Manage Jobs (/dashboard/admin/jobs)**
 
 * Search bar filtering by job title or company name.  
 * Filter by job status (Active / Closed) and category.  
@@ -311,7 +311,7 @@ On submit: save job with status active, link to Recruiter's company, and make it
 
 ---
 
-### **Payment & Subscriptions (/admin/payments)**
+### **Payment & Subscriptions (/dashboard/admin/payments)**
 
 * Table of all subscription payments across the platform.  
 * Columns: User Email, Plan, Amount, Date, Transaction ID, Status.  
@@ -320,7 +320,7 @@ On submit: save job with status active, link to Recruiter's company, and make it
 
 ---
 
-### **Admin Settings (/admin/settings)**
+### **Admin Settings (/dashboard/admin/settings)**
 
 * Update admin profile: name, email, avatar, password.
 
