@@ -197,7 +197,7 @@ The system will have a **Responsive Dashboard** consistent across all roles.
 
 ---
 
-### **My Company (/dashboard/company)**
+### **My Company (/dashboard/recruiter/company)**
 
 * If no company is registered: Show a prompt and a "Register Company" button.  
 * If registered: Show company details — name, logo, industry, location, employee count, description.  
@@ -217,7 +217,7 @@ On submit: save to database with status pending. Admin must approve before the c
 
 ---
 
-### **Manage Jobs (/dashboard/manage-jobs)**
+### **Manage Jobs (/dashboard/recruiter/jobs)**
 
 * Table of all job posts created by the Recruiter.  
 * Columns: Job Title, Status (Active / Closed / Draft), Applicants Count, Date Posted.  
@@ -226,7 +226,7 @@ On submit: save to database with status pending. Admin must approve before the c
 
 ---
 
-### **Post a Job (/dashboard/post-job)**
+### **Post a Job (/dashboard/recruiter/jobs/new)**
 
 A form divided into sections:
 
@@ -258,7 +258,7 @@ On submit: save job with status active, link to Recruiter's company, and make it
 
 ---
 
-### **Recruiter Settings (/dashboard/settings)**
+### **Recruiter Settings (/dashboard/recruiter/settings)**
 
 * Update personal info: name, email, avatar, password.  
 * Manage linked company (redirect to My Company page).
