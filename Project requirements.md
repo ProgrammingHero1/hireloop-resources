@@ -107,7 +107,7 @@ The system will have a **Responsive Dashboard** consistent across all roles.
 
 | Plan | Price | Key Features |
 | ----- | ----- | ----- |
-| Free | $0 / forever | Browse jobs, save up to 10 jobs, basic profile, email notifications |
+| Free | $0 / forever | Browse jobs, apply up to 5 jobs, basic profile, email notifications |
 | Pro | $29 / month | Unlimited applications & saved jobs, priority applications, application tracking, salary insights |
 | Enterprise | $99 / month | Everything in Pro \+ unlimited job posts, ATS, team collaboration, analytics dashboard, dedicated support, custom branding |
 
@@ -352,7 +352,7 @@ Job Posted → Seeker Applies → Under Review → Shortlisted → Offered / Rej
 
 ## **Subscription Plans**
 
-| Plan | Price | Apply to Jobs | Saved Jobs | Job Posts | Analytics |
+| Plan | Price | Apply to Jobs | Apply Jobs | Job Posts | Analytics |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | Free | $0 | ✗ (view only) | Up to 10 | ✗ | ✗ |
 | Pro | $29/mo | ✓ Unlimited | ✓ Unlimited | ✗ | ✗ |
