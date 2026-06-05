@@ -27,9 +27,9 @@ Seekers are registered job hunters who use HireLoop to discover and apply for op
 * Creating and maintaining a personal profile with skills, and contact details.  
 * Browsing and searching jobs with advanced filters (location, salary, type, etc.).  
 * Saving favorite jobs for later review.  
-* Applying to jobs directly through the platform (requires a paid plan).  
+* Applying to jobs directly through the platform — the Free plan includes a limited number of applications, with paid plans for more.  
 * Tracking the status of submitted applications from the dashboard.  
-* Upgrading to a Pro or Enterprise subscription to unlock premium features.
+* Upgrading to a Pro or Premium plan to unlock more applications and premium features.
 
 ---
 
@@ -40,7 +40,8 @@ Recruiters are company representatives who source and hire talent through HireLo
 * Registering and managing a company profile on the platform.  
 * Posting, editing, and removing job listings tied to their company.  
 * Reviewing and managing incoming applications for each job post.  
-* Viewing analytics on job post performance and applicant activity.
+* Viewing analytics on job post performance and applicant activity.  
+* Choosing a subscription plan that sets how many active job posts the company can run at once.
 
 ---
 
@@ -101,13 +102,23 @@ The system will have a **Responsive Dashboard** consistent across all roles.
 
 ### **Pricing (/pricing)**
 
-* Three subscription tiers displayed in card format:
+* A toggle (or two tabbed sections) to switch between **For Job Seekers** and **For Recruiters**, each showing three tiers in card format.
+
+**For Job Seekers**
 
 | Plan | Price | Key Features |
 | ----- | ----- | ----- |
-| Free | $0 / forever | Browse jobs, apply up to 5 jobs, basic profile, email notifications |
-| Pro | $29 / month | Unlimited applications & saved jobs, priority applications, application tracking, salary insights |
-| Enterprise | $99 / month | Everything in Pro \+ unlimited job posts, ATS, team collaboration, analytics dashboard, dedicated support, custom branding |
+| Free | $0 / forever | Browse & save up to 10 jobs, apply to up to 3 jobs per month, basic profile, email alerts |
+| Pro | $19 / month | Apply to up to 30 jobs per month, unlimited saved jobs, application tracking, salary insights |
+| Premium | $39 / month | Everything in Pro \+ unlimited applications, profile boost to recruiters, early access to new jobs, priority support |
+
+**For Recruiters**
+
+| Plan | Price | Key Features |
+| ----- | ----- | ----- |
+| Free | $0 / forever | Up to 3 active job posts, basic applicant management, standard listing visibility (great for a company's first year of hiring) |
+| Growth | $49 / month | Up to 10 active job posts, applicant tracking, basic analytics, email support |
+| Enterprise | $149 / month | Up to 50 active job posts, advanced analytics dashboard, featured job listings, team collaboration, custom branding, priority support |
 
 * FAQ accordion section covering cancellation, refunds, payment methods, and plan switching.
 
@@ -116,7 +127,7 @@ The system will have a **Responsive Dashboard** consistent across all roles.
 * Full job description, responsibilities, and requirements.  
 * Company info card with logo, name, and location.  
 * Salary range and job type badge.  
-* Apply button (requires login and paid plan for Seekers).  
+* Apply button (requires login; the Free plan allows a limited number of applications, paid plans allow more).  
 * Similar job suggestions at the bottom.
 
 ---
@@ -164,7 +175,7 @@ The system will have a **Responsive Dashboard** consistent across all roles.
 
 ### **Subscription & Billing (/dashboard/seeker/billing)**
 
-* Shows the Seeker's current plan (Free / Pro / Enterprise).  
+* Shows the Seeker's current plan (Free / Pro / Premium) and applications used this month.  
 * Upgrade/Downgrade buttons linking to the Pricing page.  
 * Payment history table with: Date, Plan, Amount, Transaction ID.  
 * Stripe-integrated card payment on upgrade.  
@@ -220,7 +231,8 @@ On submit: save to database with status pending. Admin must approve before the c
 * Table of all job posts created by the Recruiter.  
 * Columns: Job Title, Status (Active / Closed / Draft), Applicants Count, Date Posted.  
 * Action buttons per row: Edit, View Applicants, Close/Reopen, Delete (with confirmation).  
-* A "Post New Job" button at the top navigating to the Add Job page.
+* A plan usage indicator showing active job posts used vs. allowed (e.g., 7 / 10).  
+* A "Post New Job" button at the top navigating to the Add Job page (disabled once the plan's active job limit is reached).
 
 ---
 
@@ -241,7 +253,7 @@ A form divided into sections:
 * Requirements (rich text or textarea)  
 * Benefits (optional)
 
-**Company:** Auto-filled from the Recruiter's registered company (must be approved to post).
+**Company:** Auto-filled from the Recruiter's registered company (must be approved to post). Posting is allowed only while the company is within its plan's active job limit (3 / 10 / 50 for Free / Growth / Enterprise).
 
 On submit: save job with status active, link to Recruiter's company, and make it publicly visible.
 
@@ -253,6 +265,16 @@ On submit: save job with status active, link to Recruiter's company, and make it
 * Table columns: Applicant Name, Email, Date Applied, Resume link, Status.  
 * Status dropdown per applicant: Applied → Under Review → Shortlisted → Rejected → Offered.  
 * Changing status sends an email notification to the applicant.
+
+---
+
+### **Subscription & Billing (/dashboard/recruiter/billing)**
+
+* Shows the company's current plan (Free / Growth / Enterprise) and active job usage (e.g., 7 / 10 used).  
+* Upgrade/Downgrade buttons linking to the Pricing page.  
+* Payment history table with: Date, Plan, Amount, Transaction ID.  
+* Stripe-integrated card payment on upgrade.  
+* On successful payment: save payment record, activate the new plan (raising the active job limit), show a success toast.
 
 ---
 
@@ -314,7 +336,7 @@ On submit: save job with status active, link to Recruiter's company, and make it
 * Table of all subscription payments across the platform.  
 * Columns: User Email, Plan, Amount, Date, Transaction ID, Status.  
 * Date shown in both absolute and relative format (e.g., "May 10, 2026 · 9 days ago").  
-* Summary cards at the top: Total Revenue, Monthly Revenue, Active Pro Users, Active Enterprise Users.
+* Summary cards at the top: Total Revenue, Monthly Revenue, Active Seeker Subscriptions, Active Recruiter Subscriptions.
 
 ---
 
@@ -348,12 +370,24 @@ Job Posted → Seeker Applies → Under Review → Shortlisted → Offered / Rej
 
 ---
 
-## **Subscription Plans**
+HireLoop has two separate sets of plans — three for **Job Seekers** and three for **Recruiters** — since each role pays for different things (applications vs. active job posts).
 
-| Plan | Price | Apply to Jobs | Apply Jobs | Job Posts | Analytics |
-| ----- | ----- | ----- | ----- | ----- | ----- |
-| Free | $0 | ✗ (view only) | Up to 10 | ✗ | ✗ |
-| Pro | $29/mo | ✓ Unlimited | ✓ Unlimited | ✗ | ✗ |
-| Enterprise | $99/mo | ✓ Unlimited | ✓ Unlimited | ✓ Unlimited | ✓ |
+### **Seeker Plans**
+
+| Plan | Price | Apply to Jobs | Saved Jobs | Extras |
+| ----- | ----- | ----- | ----- | ----- |
+| Free | $0 | Up to 3 / month | Up to 10 | Basic profile, email alerts |
+| Pro | $19/mo | Up to 30 / month | Unlimited | Application tracking, salary insights |
+| Premium | $39/mo | Unlimited | Unlimited | Profile boost, early access to new jobs, priority support |
+
+### **Recruiter Plans**
+
+| Plan | Price | Active Job Posts | Analytics | Extras |
+| ----- | ----- | ----- | ----- | ----- |
+| Free | $0 | Up to 3 | ✗ | Basic applicant management, standard visibility |
+| Growth | $49/mo | Up to 10 | Basic | Applicant tracking, email support |
+| Enterprise | $149/mo | Up to 50 | Advanced | Featured listings, team collaboration, custom branding, priority support |
+
+New companies can post up to 3 active jobs for free — ideal for their first year of hiring — and upgrade to Growth or Enterprise as their hiring scales.
 
 Payment is processed via **Stripe**. All plans support upgrade/downgrade at any time with prorated billing. A 14-day money-back guarantee applies to paid plans.
