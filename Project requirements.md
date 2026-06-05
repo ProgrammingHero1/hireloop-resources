@@ -108,17 +108,17 @@ The system will have a **Responsive Dashboard** consistent across all roles.
 
 | Plan | Price | Key Features |
 | ----- | ----- | ----- |
-| Free | $0 / forever | Browse & save up to 10 jobs, apply to up to 3 jobs per month, basic profile, email alerts |
-| Pro | $19 / month | Apply to up to 30 jobs per month, unlimited saved jobs, application tracking, salary insights |
-| Premium | $39 / month | Everything in Pro \+ unlimited applications, profile boost to recruiters, early access to new jobs, priority support |
+| Free | $0/forever | Browse & save up to 10 jobs, apply to up to 3 jobs per month, basic profile, email alerts |
+| Pro | $19/month | Apply to up to 30 jobs per month, unlimited saved jobs, application tracking, salary insights |
+| Premium | $39/month | Everything in Pro \+ unlimited applications, profile boost to recruiters, early access to new jobs, priority support |
 
 **For Recruiters**
 
 | Plan | Price | Key Features |
 | ----- | ----- | ----- |
-| Free | $0 / forever | Up to 3 active job posts, basic applicant management, standard listing visibility (great for a company's first year of hiring) |
-| Growth | $49 / month | Up to 10 active job posts, applicant tracking, basic analytics, email support |
-| Enterprise | $149 / month | Up to 50 active job posts, advanced analytics dashboard, featured job listings, team collaboration, custom branding, priority support |
+| Free | $0/forever | Up to 3 active job posts, basic applicant management, standard listing visibility (great for a company's first year of hiring) |
+| Growth | $49/month | Up to 10 active job posts, applicant tracking, basic analytics, email support |
+| Enterprise | $149/month | Up to 50 active job posts, advanced analytics dashboard, featured job listings, team collaboration, custom branding, priority support |
 
 * FAQ accordion section covering cancellation, refunds, payment methods, and plan switching.
 
@@ -376,7 +376,7 @@ HireLoop has two separate sets of plans — three for **Job Seekers** and three 
 
 | Plan | Price | Apply to Jobs | Saved Jobs | Extras |
 | ----- | ----- | ----- | ----- | ----- |
-| Free | $0 | Up to 3 / month | Up to 10 | Basic profile, email alerts |
+| Free | $0 | Up to 3/month | Up to 10 | Basic profile, email alerts |
 | Pro | $19/mo | Up to 30 / month | Unlimited | Application tracking, salary insights |
 | Premium | $39/mo | Unlimited | Unlimited | Profile boost, early access to new jobs, priority support |
 
